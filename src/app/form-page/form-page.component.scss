@@ -1,0 +1,30 @@
+.main-body{
+    width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+label {
+    display: block;
+    width: 400px;
+    margin-top: 10px;
+}
+
+input,select,textarea {
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 5px;
+}
+
+.form{
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    padding-left: 60px;
+}
+
+span{
+    color: red;
+    display: block;
+}

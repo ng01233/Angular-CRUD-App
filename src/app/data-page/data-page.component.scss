@@ -1,0 +1,51 @@
+table {
+    //border: 0.5px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table tr th{
+    border: 0.1px solid black;
+    padding: 10px;
+    width: 200px;
+    
+}
+
+table tr td{
+    border: 0.1px solid black;
+    padding: 10px;
+    width: 200px;
+    border-top: 0;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.form-table {
+    width: 1000px;
+    margin: 0 auto;
+    
+}
+
+.buttons {
+    display: flex;
+    width: 150px;
+    margin: 0 auto;
+}
+button {
+    margin-left: 10px;
+    padding: 7px;
+    width: 70px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #0284c7;
+    color: #ffffff;
+
+}
+
+button:hover {
+    background-color: #0c4a6e;
+    cursor: pointer;
+}

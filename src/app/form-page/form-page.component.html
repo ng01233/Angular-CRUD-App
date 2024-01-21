@@ -1,0 +1,61 @@
+<div class="main-body">
+    <div class="header">
+    <h1>Entry Form</h1>
+    </div>
+
+<div class="form">
+<form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+    <label for="Name">Name:
+        <input type="text" placeholder="Enter Your Name" formControlName="name">
+    </label>
+    
+    <label for="Gender">
+        Gender:
+    <select id="dropdown" formControlName="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+    </label>
+
+    <label for="Address">
+        Address:
+        <textarea name="address" id="address" cols="45" rows="5" placeholder="Enter Your Address" formControlName="address"></textarea>
+    </label>
+
+    <label for="Date">
+        Date of Birth: 
+        <input type="date" formControlName="date">
+    </label>
+
+    <label for="College">
+        Name of University: <input type="text" placeholder="Enter Your College/University Name" formControlName="college">
+    </label>
+
+    <label for="Course">
+        Course Name: <input type="text" placeholder="Enter your Course" formControlName="course">
+    </label>
+
+    <label for="fatherName">
+        Father's Name: <input type="text" placeholder="Enter Father's Name" formControlName="fathersName">
+    </label>
+
+    <label for="motherName">
+        Mother's Name: <input type="text" placeholder="Enter Mother's Name" formControlName="mothersName">
+    </label>
+
+    <label for="phoneNumber">
+        Phone Number <input type="number" placeholder="Enter your Phone Number"  formControlName="phoneNumber">
+    </label>
+
+    <label for="email">
+        Email:
+        <input type="email" placeholder="Enter Your Name" formControlName="email">
+    </label>
+
+    <label for="Submit">
+    <input [disabled]="entryForm.invalid" type="submit" name="" id="">
+    </label>
+
+</form>
+</div>
+</div>

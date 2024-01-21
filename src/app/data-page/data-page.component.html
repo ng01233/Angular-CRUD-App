@@ -1,0 +1,36 @@
+<h1>Form data in Table</h1>
+
+<div class="form-table">
+<table>
+    <tr>
+        <th>
+            Form ID
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Phone Number
+        </th>
+        <th>
+            Date Of Birth
+        </th>
+        <th>
+            Actions
+        </th>
+    </tr>
+    <tr *ngFor="let form of formData">
+       <td *ngFor="let data of form">
+        {{data}}
+       </td>
+       <td>
+        <div class="buttons">
+            <button class='edit' (click)="editForm(form)">EDIT</button>
+            <button class='delete' (click)="deleteRecord(form)">DELETE</button>
+        </div>
+       </td>
+    </tr>
+
+</table>
+</div>
+
